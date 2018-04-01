@@ -1,4 +1,4 @@
-# Yomichan's web service fork #
+# Yomichan's web-service fork #
 ## Backend [Nodejs + mongodb] -><- Frontend [jquery + yomichan] ##
 
 Yomichan turns your web browser into a tool for building Japanese language literacy by helping you to decipher texts
@@ -20,6 +20,10 @@ First of all run `npm install`. Then install these dependences to your computer:
 ## Frontend part ##
 
 An example of frontend locates in ./example/index.html. It's better to see it and everything becomes clear. If you change templates, run `bash ./build_tmpl.sh` after that. If you change frontentd's scripts, run `bash build_front.sh` after all.
+
+## Live example ##
+
+Live usage of this web-service you can find on the [anisub.tv](http://anisub.tv/) site. 
 
 ## License ##
 
