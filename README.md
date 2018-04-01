@@ -1,5 +1,5 @@
 # Yomichan's web-service fork #
-## Backend [Nodejs + mongodb] -><- Frontend [jquery + yomichan] ##
+## Backend [Nodejs + memcached + mongodb] -><- Frontend [jquery + yomichan] ##
 
 Yomichan turns your web browser into a tool for building Japanese language literacy by helping you to decipher texts
 which would be otherwise too difficult tackle. This extension is similar to
