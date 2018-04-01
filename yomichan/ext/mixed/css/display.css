@@ -1,0 +1,232 @@
+/*
+ * Copyright (C) 2016  Alex Yatskov <alex@foosoft.net>
+ * Author: Alex Yatskov <alex@foosoft.net>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the entrys of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+
+/*
+ * Fonts
+ */
+
+@font-face {
+    font-family: kanji-stroke-orders;
+    src: url('/yomichan/ext/mixed/ttf/kanji-stroke-orders.ttf');
+}
+
+/*
+ * General
+ */
+
+hr {
+    padding: 0px;
+    margin: 0px;
+}
+
+#spinner {
+    bottom: 5px;
+    display: none;
+    position: fixed;
+    right: 5px;
+}
+
+#error-orphaned {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Entries
+ */
+
+.entry, .note {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tag-default {
+    background-color: #8a8a91;
+}
+
+.tag-name {
+    background-color: #5cb85c;
+}
+
+.tag-expression {
+    background-color: #f0ad4e;
+}
+
+.tag-popular {
+    background-color: #0275d8;
+}
+
+.tag-frequent {
+    background-color: #5bc0de;
+}
+
+.tag-archaism {
+    background-color: #d9534f;
+}
+
+.tag-dictionary {
+    background-color: #aa66cc;
+}
+
+.tag-frequency {
+    background-color: #5cb85c;
+}
+
+.tag-partOfSpeech {
+    background-color: #565656;
+}
+
+.actions .disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.actions .disabled img {
+    -webkit-filter: grayscale(100%);
+    opacity: 0.25;
+}
+
+.actions .pending {
+    visibility: hidden;
+}
+
+.actions {
+    display: inline-block;
+    float: right;
+}
+
+.actions:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.expression {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.expression .kanji-link {
+    border-bottom: 1px #777 dashed;
+    color: #333;
+    text-decoration: none;
+}
+
+.expression-popular, .expression-popular .kanji-link {
+    color: #0275d8;
+}
+
+.expression-rare, .expression-rare .kanji-link {
+    color: #999;
+}
+
+.expression .peek-wrapper {
+    font-size: 14px;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+.expression .peek-wrapper .action-play-audio {
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+}
+
+.expression .peek-wrapper .tags {
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+}
+
+.expression .peek-wrapper .frequencies {
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+}
+
+.expression:hover .peek-wrapper {
+    visibility: visible;
+}
+
+.reasons {
+    color: #777;
+    display: inline-block;
+}
+
+.compact-info {
+    display: inline-block;
+}
+
+.glossary ol, .glossary ul {
+    padding-left: 1.4em;
+}
+
+.glossary ul.compact-glossary {
+    display: inline;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.glossary .compact-glossary li {
+    display: inline;
+}
+
+.glossary .compact-glossary li:not(:first-child):before {
+    content: " | ";
+}
+
+.glossary li {
+    color: #777;
+}
+
+.glossary-item {
+    color: #000;
+}
+
+div.glossary-item.compact-glossary {
+    display: inline;
+}
+
+.glyph {
+    font-family: kanji-stroke-orders;
+    font-size: 120px;
+    line-height: 120px;
+    padding: 0.01em;
+    vertical-align: top;
+}
+
+.glyph-data {
+    margin-top: 10px;
+}
+
+.info-output {
+    width: 100%;
+}
+
+.info-output td {
+    text-align: right;
+}

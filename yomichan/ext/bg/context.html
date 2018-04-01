@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/yomichan/ext/mixed/lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/yomichan/ext/mixed/lib/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="/yomichan/ext/mixed/lib/bootstrap-toggle/bootstrap-toggle.min.css">
+        <style type="text/css">
+            body {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .btn-group {
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <input type="checkbox" id="enable-search">
+        </p>
+        <p>
+            <div class="btn-group" style="white-space: nowrap">
+                <button type="button" id="open-search" title="Search (Alt + Insert)" class="btn btn-default btn-xs glyphicon glyphicon-search"></button>
+                <button type="button" id="open-options" title="Options" class="btn btn-default btn-xs glyphicon glyphicon-wrench"></button>
+                <button type="button" id="open-help" title="Help" class="btn btn-default btn-xs glyphicon glyphicon-question-sign"></button>
+            </div>
+        </p>
+
+        <script src="/yomichan/ext/mixed/lib/jquery.min.js"></script>
+        <script src="/yomichan/ext/mixed/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+        <script src="/yomichan/ext/bg/js/api.js"></script>
+        <script src="/yomichan/ext/bg/js/options.js"></script>
+        <script src="/yomichan/ext/bg/js/util.js"></script>
+
+        <script src="/yomichan/ext/bg/js/context.js"></script>
+    </body>
+</html>

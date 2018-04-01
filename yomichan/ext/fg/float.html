@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="/yomichan/ext/mixed/lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/yomichan/ext/mixed/lib/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/yomichan/ext/mixed/css/display.css">
+        <style type="text/css">
+            .entry, .note {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="spinner">
+            <img src="/yomichan/ext/mixed/img/spinner.gif">
+        </div>
+
+        <div id="definitions"></div>
+
+        <div id="error-orphaned">
+            <div class="container-fluid">
+            </div>
+        </div>
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="/yomichan/ext/fg/js/float_bundle.js"></script>
+        <script>
+            var global = window;
+            window.port = 4101;
+            window.lang = 'ru';
+        </script>
+    </body>
+</html>

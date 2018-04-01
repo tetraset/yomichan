@@ -1,0 +1,24 @@
+{
+  "name": "yomichan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "yomichan.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "handlebars": "^4.0.11",
+    "md5": "^2.2.1",
+    "memcached": "^2.2.2",
+    "mongodb": "^3.0.0-rc0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tetraset/yomichan.git"
+  },
+  "author": "tetraset",
+  "license": "ISC",
+  "homepage": "https://github.com/tetraset/yomichan#readme"
+}
