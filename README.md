@@ -23,7 +23,7 @@ An example of frontend locates in ./example/index.html. It's better to see it an
 
 ## Live example ##
 
-Live usage of this web-service you can find on the [anisub.tv](http://anisub.tv/) site. Hover on any japanese text on an anime page.
+Live usage of this web-service you can find on the [anisub.tv](https://anisub.tv/) site. Hover on any japanese text on an anime page.
 
 ## License ##
 
